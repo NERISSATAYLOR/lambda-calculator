@@ -1,5 +1,9 @@
 import React from "react";
-
-const Display = () => {
-  return <div className="display">{/* Display any props data here */}</div>;
+import OperatorButton from "../DisplayComponents/Display";
+const Display = (props) => {
+  return (
+    <div className="display">{/* Display any props data here */}
+      <OperatorButton /></div>
+  )
 };
+export default Display;
