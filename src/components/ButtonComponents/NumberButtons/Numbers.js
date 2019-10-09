@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { numbers } from '../../../data';
+import NumberButton from './NumberButton';
 //import any components needed
 // example of import from data.js. Note all the ../   This is how we move through folders. 
 /* 
@@ -14,8 +15,8 @@ const Numbers = () => {
   return (
     <div>
 
-      {numberButton.map((numbers, index) => (
-        <NumberButton key={index} numbers={numbers} />
+      {numberButton && numberButton.map((button, index) => (
+        <NumberButton key={index} button={button} />
       ))}
       {/* STEP 3 - Use .map() to iterate over your array data and return a button
        component matching the name on the provided file. Pass
@@ -23,3 +24,4 @@ const Numbers = () => {
     </div>
   );
 };
+export default Numbers;

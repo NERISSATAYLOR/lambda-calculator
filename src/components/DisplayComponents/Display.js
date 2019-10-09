@@ -1,9 +1,14 @@
 import React from "react";
-import OperatorButton from "../DisplayComponents/Display";
-const Display = (props) => {
+import Operators from "../ButtonComponents/OperatorButtons/OperatorButton";
+import { operators } from "../../data";
+import SpecialButton from '../ButtonComponents/SpecialButtons/SpecialButton';
+import OperatorButton from "../ButtonComponents/OperatorButtons/OperatorButton";
+import NumberButton from '../ButtonComponents/NumberButtons/NumberButton';
+const Display = props => {
   return (
     <div className="display">{/* Display any props data here */}
-      <OperatorButton /></div>
+      {props.specials}
+    </div>
   )
 };
 export default Display;
