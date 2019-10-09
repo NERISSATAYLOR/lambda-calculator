@@ -27,8 +27,8 @@ function App() {
         <Display />
         <Operators />
         <Numbers />
-        <NumberButton />
-        <SpecialButton />
+
+        <Specials />
       </div>
     </div>
   );
